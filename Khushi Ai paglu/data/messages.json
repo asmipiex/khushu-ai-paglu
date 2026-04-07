@@ -1,0 +1,31 @@
+{
+  "messages": [
+    {
+      "id": "7d73e6d1eb7c45c6_1775586712",
+      "sender": "anirudh",
+      "type": "text",
+      "content": "hi khushi",
+      "media": null,
+      "timestamp": "2026-04-08T00:01:52.322324",
+      "deleted": true
+    },
+    {
+      "id": "590a8c2415264ffc_1775586754",
+      "sender": "khushi",
+      "type": "text",
+      "content": "hi ani",
+      "media": null,
+      "timestamp": "2026-04-08T00:02:34.770561",
+      "deleted": true
+    },
+    {
+      "id": "6fc7c9fbedb54a4a_1775586763",
+      "sender": "anirudh",
+      "type": "text",
+      "content": "helowww",
+      "media": null,
+      "timestamp": "2026-04-08T00:02:43.457018",
+      "deleted": true
+    }
+  ]
+}

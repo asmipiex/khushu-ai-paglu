@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khushi AI Paglu 😊 — The AI Visionary</title>
+  <meta name="description"
+    content="A tribute to the most passionate AI creator, visionary, and unstoppable force in artificial intelligence.">
+  <meta name="theme-color" content="#07060B">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+</head>
+
+<body>
+
+  <!-- Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">✦ KAP</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#passion">Vision</a></li>
+      <li><a href="#song">Song</a></li>
+      <li><a href="#social">Connect</a></li>
+    </ul>
+    <button id="music-toggle" class="music-btn" aria-label="Toggle Music">
+      <span class="music-icon">🎵</span>
+      <div class="music-waves">
+        <span></span><span></span><span></span>
+      </div>
+    </button>
+  </nav>
+
+  <!-- Audio Player (Hidden) -->
+  <audio id="bg-music" loop preload="auto"></audio>
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Building the future with AI
+    </div>
+
+    <h1>
+      <span class="gradient-text">Khushi AI Paglu</span>
+      <span class="blush-emoji">😊</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      AI Creator <span>•</span> Visionary <span>•</span> Unstoppable
+    </p>
+
+    <!-- Portrait -->
+    <div class="portrait-container">
+      <div class="portrait-glow"></div>
+      <div class="portrait-ring"></div>
+      <div class="portrait-img">
+        <img src="assets/images/khushi-sketch.png" alt="Khushi — AI Visionary" id="portrait">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PASSION SECTION
+       ═══════════════════════════════════════ -->
+  <section class="section" id="passion">
+    <h2 class="section-title reveal">The AI Visionary</h2>
+    <div class="passion-grid">
+      <div class="passion-card reveal" style="animation-delay: 0.1s">
+        <span class="icon">🧠</span>
+        <h3>AI Innovator</h3>
+        <p>Deeply passionate about learning and building advanced AI technologies. Every day is a new breakthrough,
+          every code is a step closer to the future.</p>
+      </div>
+      <div class="passion-card reveal" style="animation-delay: 0.2s">
+        <span class="icon">🎬</span>
+        <h3>Content Creator</h3>
+        <p>Creating incredible AI videos that educate and inspire. Growing stronger on YouTube and Instagram, one video
+          at a time. The world is watching.</p>
+      </div>
+      <div class="passion-card reveal" style="animation-delay: 0.3s">
+        <span class="icon">🚀</span>
+        <h3>Future Builder</h3>
+        <p>Not just learning AI — building it. Pushing boundaries in advanced AI tech, exploring what's possible, and
+          turning imagination into reality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       HIGHLIGHT QUOTE
+       ═══════════════════════════════════════ -->
+  <section class="quote-section reveal">
+    <div class="highlight-quote glass">
+      You are my fav AI paglu forever 💜
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       3D CUBE SECTION — THE SECRET GATEWAY
+       ═══════════════════════════════════════ -->
+  <section class="cube-section" id="cube">
+    <p class="cube-hint">✦ interact with me ✦</p>
+
+    <!-- Top Line Bar -->
+    <div class="line-bar" id="top-bar">
+      <div class="line" data-index="0"></div>
+      <div class="line" data-index="1"></div>
+      <div class="line" data-index="2"></div>
+      <div class="line" data-index="3"></div>
+      <div class="line" data-index="4"></div>
+      <div class="line" data-index="5"></div>
+      <div class="line" data-index="6"></div>
+    </div>
+
+    <!-- 3D Cube -->
+    <div class="cube-scene" id="cube-scene">
+      <div class="cube auto-rotate" id="cube-3d">
+        <div class="face front">
+          <div class="face-glow"></div>
+          <span class="face-icon">✦</span>
+        </div>
+        <div class="face back">
+          <div class="face-glow"></div>
+          <span class="face-icon">✦</span>
+        </div>
+        <div class="face right">
+          <div class="face-glow"></div>
+          <span class="face-icon">✦</span>
+        </div>
+        <div class="face left">
+          <div class="face-glow"></div>
+          <span class="face-icon">✦</span>
+        </div>
+        <div class="face top">
+          <div class="face-glow"></div>
+          <span class="face-icon">✦</span>
+        </div>
+        <div class="face bottom">
+          <div class="face-glow"></div>
+          <span class="face-icon">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Line Bar -->
+    <div class="line-bar" id="bottom-bar">
+      <div class="line" data-index="0"></div>
+      <div class="line" data-index="1"></div>
+      <div class="line" data-index="2"></div>
+      <div class="line" data-index="3"></div>
+      <div class="line" data-index="4"></div>
+      <div class="line" data-index="5"></div>
+      <div class="line" data-index="6"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SONG SECTION
+       ═══════════════════════════════════════ -->
+  <section class="section song-section" id="song">
+    <div class="song-header reveal">
+      <span class="music-note">🎵</span>
+      <h2 class="section-title" style="margin-bottom:0">Algorithm of Us</h2>
+      <span class="music-note">🎵</span>
+    </div>
+
+    <div class="lyrics-container glass reveal">
+      <div class="lyrics-verse">
+        <p class="lyrics-line">In the binary of this world so wide,</p>
+        <p class="lyrics-line">You're the neural network I can't hide,</p>
+        <p class="lyrics-line"><span class="highlight">Khushi</span>, you teach the machines to see,</p>
+        <p class="lyrics-line">While this <span class="highlight-pink">Artist</span> paints what's meant to be.</p>
+      </div>
+
+      <div class="lyrics-verse">
+        <p class="lyrics-line">Your code compiles like morning light,</p>
+        <p class="lyrics-line">Training models through the quiet night,</p>
+        <p class="lyrics-line">Every epoch brings you closer still,</p>
+        <p class="lyrics-line">To the dreams only you can fulfill.</p>
+      </div>
+
+      <div class="lyrics-verse">
+        <p class="lyrics-line">Hey <span class="highlight">Khushi</span>, my AI paglu,</p>
+        <p class="lyrics-line">The world's learning what I already knew,</p>
+        <p class="lyrics-line">That intelligence isn't just in the code you write,</p>
+        <p class="lyrics-line">It's in the way you make everything bright.</p>
+      </div>
+
+      <div class="lyrics-verse">
+        <p class="lyrics-line">You're debugging futures, one line at a time,</p>
+        <p class="lyrics-line">While this <span class="highlight-pink">Artist</span> watches in rhythm and rhyme,</p>
+        <p class="lyrics-line">Two dreamers lost in a digital sky,</p>
+        <p class="lyrics-line">Building tomorrow, you and I.</p>
+      </div>
+
+      <div class="lyrics-verse">
+        <p class="lyrics-line">The algorithms whisper your name,</p>
+        <p class="lyrics-line"><span class="highlight">Khushi</span> — nothing about you is the same,</p>
+        <p class="lyrics-line">In a world of artificial minds,</p>
+        <p class="lyrics-line">You're the realest soul I'll ever find.</p>
+      </div>
+
+      <p class="lyrics-credit">— composed with warmth, by the Artist 💜</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SOCIAL SECTION
+       ═══════════════════════════════════════ -->
+  <section class="section social-section" id="social">
+    <h2 class="section-title reveal">Follow the Journey</h2>
+    <div class="social-grid reveal">
+      <a href="https://www.instagram.com/khushigrewall/" target="_blank" rel="noopener" class="social-card"
+        id="link-instagram">
+        <span class="social-icon">📸</span>
+        <div>
+          <div class="social-name">Instagram</div>
+          <div class="social-handle">@khushigrewall</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/@khushigrewall" target="_blank" rel="noopener" class="social-card"
+        id="link-youtube">
+        <span class="social-icon">▶️</span>
+        <div>
+          <div class="social-name">YouTube</div>
+          <div class="social-handle">@khushigrewall</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <p>crafted with <span class="heart">♥</span>by ani for the AI revolution</p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       SECRET BOX OVERLAY (loaded after unlock)
+       ═══════════════════════════════════════ -->
+  <div class="secret-overlay" id="secret-overlay">
+    <button class="secret-back-btn" id="secret-back-btn" onclick="closeSecretBox()">← Back</button>
+
+    <div class="secret-header">
+      <h2>✦ The Secret Box ✦</h2>
+      <p>Only the curious find the truth</p>
+    </div>
+
+    <div class="secret-grid">
+      <!-- Chat App -->
+      <div class="secret-card" id="open-chat" onclick="openChat()">
+        <span class="card-icon">💬</span>
+        <h3>Our Chat</h3>
+        <p>A private space, just for us</p>
+      </div>
+
+      <!-- Constellation -->
+      <div class="secret-card" id="open-constellation" onclick="openConstellation()">
+        <span class="card-icon">🌟</span>
+        <h3>Constellation</h3>
+        <p>Stars that tell our story</p>
+      </div>
+
+      <!-- Secret Vault -->
+      <div class="secret-card" id="open-vault" onclick="openSecretVault()">
+        <span class="card-icon">🔐</span>
+        <h3>Secret Vault</h3>
+        <p>Some things are only for us</p>
+      </div>
+
+      <!-- Love Letters -->
+      <div class="secret-card" id="open-letters" onclick="openLetters()">
+        <span class="card-icon">💌</span>
+        <h3>Surprise Notes</h3>
+        <p>Little things that mean everything</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       SECRET CODE MODAL
+       ═══════════════════════════════════════ -->
+  <div class="modal-overlay" id="secret-modal">
+    <div class="modal" style="position:relative;">
+      <button class="modal-close" onclick="closeSecretModal()">×</button>
+      <h3>🔐 Secret Vault</h3>
+      <p>Enter the code only we know</p>
+      <input type="password" id="secret-code-input" placeholder="• • • • • • • •" maxlength="20" autocomplete="off">
+      <div id="secret-error" style="color:#EF4444;font-size:0.85rem;margin-top:8px;display:none;">Wrong code, try again
+      </div>
+      <button class="modal-btn" onclick="verifySecretCode()">Unlock</button>
+      <div class="contact-reveal" id="contact-reveal">
+        <h3
+          style="margin:20px 0 16px;font-size:1.1rem;background:linear-gradient(135deg,#A855F7,#EC4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+          💜 Our Secret Links</h3>
+        <div class="contact-item" id="contact-tg">
+          <span>📨</span>
+          <div style="text-align:left">
+            <div style="font-weight:600;font-size:0.95rem">Telegram</div>
+            <a id="tg-link" href="#" target="_blank" style="font-size:0.85rem;color:#A855F7;"></a>
+          </div>
+        </div>
+        <div class="contact-item" id="contact-wa">
+          <span>📱</span>
+          <div style="text-align:left">
+            <div style="font-weight:600;font-size:0.95rem">WhatsApp</div>
+            <a id="wa-link" href="#" target="_blank" style="font-size:0.85rem;color:#EC4899;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       CONSTELLATION MODAL
+       ═══════════════════════════════════════ -->
+  <div class="modal-overlay" id="constellation-modal">
+    <div class="modal" style="position:relative;max-width:600px;">
+      <button class="modal-close" onclick="closeConstellationModal()">×</button>
+      <h3>🌟 Our Constellation</h3>
+      <p>Every star marks a moment...</p>
+      <canvas id="constellation-canvas" width="500" height="400"
+        style="width:100%;border-radius:16px;margin-top:20px;background:rgba(0,0,0,0.3);"></canvas>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       LETTERS MODAL
+       ═══════════════════════════════════════ -->
+  <div class="modal-overlay" id="letters-modal">
+    <div class="modal" style="position:relative;max-width:500px;">
+      <button class="modal-close" onclick="closeLettersModal()">×</button>
+      <h3>💌 Surprise Notes</h3>
+      <div id="letters-container" style="margin-top:20px;text-align:left;">
+        <div class="glass" style="padding:24px;margin-bottom:16px;border-radius:16px;">
+          <p style="font-family:'Caveat',cursive;font-size:1.3rem;color:#E8D5FF;line-height:1.8;">
+            Hey Khushi,<br><br>
+            You know what makes you special? It's not just the AI you build or the videos you create. It's the way your
+            eyes light up when you talk about technology. It's the way you never give up. It's YOU.<br><br>
+            Keep building. Keep dreaming. Keep being unstoppable.<br><br>
+            — The Artist 💜
+          </p>
+        </div>
+        <div class="glass" style="padding:24px;border-radius:16px;">
+          <p style="font-family:'Caveat',cursive;font-size:1.3rem;color:#E8D5FF;line-height:1.8;">
+            When the whole world runs on AI,<br>
+            remember — you were there from the start.<br>
+            And I was there watching you rise. 🌟<br><br>
+            — Artist ✦
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/cube.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
