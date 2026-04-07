@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>💬 Private Chat</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/chat.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+</head>
+<body class="chat-page">
+
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ═══════════════════════════════════════
+       USER SELECTION SCREEN
+       ═══════════════════════════════════════ -->
+  <div class="user-select-screen" id="user-select-screen">
+    <h2>Welcome Back 💜</h2>
+    <p>Who's here today?</p>
+    <div class="user-select-buttons">
+      <button class="user-select-btn khushi" onclick="selectUser('khushi')">
+        <span class="avatar-emoji">💜</span>
+        <span class="user-name">I'm Khushi</span>
+      </button>
+      <button class="user-select-btn anirudh" onclick="selectUser('anirudh')">
+        <span class="avatar-emoji">🎨</span>
+        <span class="user-name">I'm Anirudh</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       iPHONE CHAT INTERFACE
+       ═══════════════════════════════════════ -->
+  <div class="iphone-scene" id="iphone-scene" style="display:none;">
+    <div class="iphone-frame">
+      <!-- Status Bar -->
+      <div class="iphone-status-bar">
+        <span id="status-time">9:41</span>
+        <span>●●●● 5G</span>
+      </div>
+      <!-- Notch -->
+      <div class="iphone-notch"></div>
+      <!-- Screen Content -->
+      <div class="iphone-screen">
+        <!-- Chat Header -->
+        <div class="chat-header">
+          <button class="back-btn" onclick="goBack()" title="Back">‹</button>
+          <div class="chat-avatar" id="chat-partner-avatar">💜</div>
+          <div class="chat-header-info">
+            <h4 id="chat-partner-name">Khushi</h4>
+            <span class="status" id="chat-status">online</span>
+          </div>
+        </div>
+
+        <!-- Messages -->
+        <div class="chat-messages" id="chat-messages">
+          <!-- Messages loaded dynamically -->
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typing-indicator">
+          <div class="typing-dots">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <!-- File Preview -->
+        <div class="file-preview" id="file-preview">
+          <img class="file-preview-thumb" id="file-preview-thumb" src="" alt="">
+          <div class="file-preview-info" id="file-preview-info">file.jpg</div>
+          <button class="file-preview-remove" onclick="removeFilePreview()">✕</button>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-area">
+          <div class="chat-input-actions">
+            <button class="chat-action-btn" onclick="triggerFileUpload('image')" title="Photo">📷</button>
+            <button class="chat-action-btn" onclick="triggerFileUpload('video')" title="Video">🎥</button>
+            <button class="chat-action-btn" onclick="triggerFileUpload('audio')" title="Audio">🎵</button>
+          </div>
+          <div class="chat-input-wrapper">
+            <textarea class="chat-input" id="chat-input" placeholder="Message..." rows="1" maxlength="2000"></textarea>
+          </div>
+          <button class="chat-send-btn" id="send-btn" onclick="sendMessage()" title="Send">➤</button>
+        </div>
+
+        <!-- Home Indicator -->
+        <div class="iphone-home-indicator">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden file inputs -->
+  <input type="file" id="file-input-image" accept="image/*" style="display:none" onchange="handleFileSelect(event, 'image')">
+  <input type="file" id="file-input-video" accept="video/*" style="display:none" onchange="handleFileSelect(event, 'video')">
+  <input type="file" id="file-input-audio" accept="audio/*" style="display:none" onchange="handleFileSelect(event, 'audio')">
+
+  <script src="js/particles.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>
